@@ -87,3 +87,14 @@ form .email-send{
     border:0;
     outline: none;
 }
+form .btn-footer{
+    background: transparent;
+    border:0;
+    outline: none;
+    cursor: pointer;
+}
+form .btn-footer .fas{
+    font-size:16px;
+    color: var(--white);
+
+}
