@@ -1,0 +1,89 @@
+.footer-logo{
+    height: 75px;
+    width: 150px;
+    background-image: url('img/likbezlogo(W).png');  
+    background-size:100%;
+    background-repeat: no-repeat;
+    justify-self: start;
+    margin-bottom: 30px;
+}
+footer{
+    width: 100%;
+    
+    bottom: 0;
+    background: linear-gradient(to right, var(--lightblue), var(--darkblue));
+    color: var(--white);
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    line-height:20px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.col{
+    flex-basis: 25%;
+    padding:10px; 
+}
+.col h3{
+    width: fit-content;
+    margin-bottom:40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom:solid 1px var(--white);
+    margin:20px 0;
+}
+
+.links li{
+    list-style: none;
+    margin-bottom: 12px;
+
+}
+.col .links a{
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+}
+.col .links a::before{
+    content: "";
+    bottom:0;
+    left:0;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--white);;
+    transition:0.2s;
+}
+.col .links a:hover{
+    color: var(--white);
+}
+.col .links a:hover:before{
+    width:100%;
+}
+form{
+    padding-bottom: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--white);
+    margin-bottom:50px;
+}
+
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form .email-send{
+    width: 100%;
+    background: transparent;
+    color:var(--white);
+    border:0;
+    outline: none;
+}
