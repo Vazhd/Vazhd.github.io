@@ -133,8 +133,9 @@ font-weight: lighter;
   font-weight: bold;
 }
 #btn{
-  margin-top: 1278px;
+  margin-top: 1242px;
   margin-left: 880px;
+  margin-bottom: 150px;
   font-size: 2rem;
   padding: 8px 20px;
   border: none;
