@@ -1,4 +1,3 @@
-@import url('LikBezFooter.css');
 :root{
     --darkblue:#3100BD;
     --lightblue:#2AD9FF;
@@ -11,7 +10,106 @@
 
 
 }
+.footer-logo{
+    height: 75px;
+    width: 150px;
+    background-image: url('img/likbezlogo(W).png');
+    background-size:100%;
+    background-repeat: no-repeat;
+    justify-self: start;
+    margin-bottom: 30px;
+}
+footer{
+    width: 100%;
 
+    bottom: 0;
+    background: linear-gradient(to right, var(--lightblue), var(--darkblue));
+    color: var(--white);
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    line-height:20px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.col{
+    flex-basis: 25%;
+    padding:10px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom:40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom:solid 1px var(--white);
+    margin:20px 0;
+}
+
+.links li{
+    list-style: none;
+    margin-bottom: 12px;
+
+}
+.col .links a{
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+}
+.col .links a::before{
+    content: "";
+    bottom:0;
+    left:0;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--white);;
+    transition:0.2s;
+}
+.col .links a:hover{
+    color: var(--white);
+}
+.col .links a:hover:before{
+    width:100%;
+}
+form{
+    padding-bottom: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--white);
+    margin-bottom:50px;
+}
+
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form .email-send{
+    width: 100%;
+    background: transparent;
+    color:var(--white);
+    border:0;
+    outline: none;
+}
+form .btn-footer{
+    background: transparent;
+    border:0;
+    outline: none;
+    cursor: pointer;
+}
+form .btn-footer .fas{
+    font-size:16px;
+    color: var(--white);
+
+}
 body{
   font-family: 'Comfortaa', cursive;
   margin:0;
@@ -104,7 +202,29 @@ body{
     background-color: var(--black);;
 }
 
-/* перенос панеля куда то там, я сам не понял, сорян((( */   
+/* перенос панеля куда то там, я сам не понял, сорян((( */
+.ForBeauty{
+  position: absolute;
+  width: 100%;
+  height: 900px;
+  background-color: #fffaf2;
+}
+.pos{
+  position: absolute;
+  top: 883px;
+  height: 1px;
+    width: 100%;
+}
+hr.style-one {
+border: 0;
+height: 5px;
+background: #333;
+background-image: -webkit-linear-gradient(left, #fabbbb, #ff7373, #fabbbb);
+background-image: -moz-linear-gradient(left, #fabbbb, #ff7373, #fabbbb);
+background-image: -ms-linear-gradient(left, #fabbbb, #ff7373, #fabbbb);
+background-image: -o-linear-gradient(left, #fabbbb, #ff7373, #fabbbb);
+}
+
 #h1
 {
   position: absolute;
@@ -144,9 +264,6 @@ top: 316px;
 
   color: #0A0A0A;
 }
-.teachersPart{
-    margin: 0 auto;
-}
 #h2{
 
     position: absolute;
@@ -163,60 +280,25 @@ top: 316px;
 
     color: #0A0A0A;
 }
-
-.arr-div{
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  border-top: 8px solid #202020;
-  border-left: 8px solid #202020;
-  transform: rotate(45deg);
-  left: 27.5px;
-  top: 35px;
-}
-.right{
-  position: absolute;
-  height: 80px;
-  width: 40px;
-  left: 1335px;
-  top: 1280px;
-  transform: rotate(90deg);
-}
-.left{
-  position: absolute;
-  height: 80px;
-  width: 40px;
-  left: 105px;
-  top: 1346px;
-  transform:rotate(-90deg);
-}
-.rect1{
-  position: absolute;
-  width: 306px;
-  height: 426px;
-  left: 195px;
-  top: 1093px;
-}
-.rect2{
+.container.slider{
   position: absolute;
 width: 338px;
 height: 470px;
-left: 551px;
+left: 193px;
 top: 1071px;
 }
-.rect3{
+.text{
   position: absolute;
-width: 306px;
-height: 426px;
-left: 939px;
-top: 1093px;
-}
-.movement{
-  z-index: 5;
-      transition: all 0.2s;
-   cursor: pointer;
-}
-.movement:hover{
-  transform: scale(1.09) translateY(3px);
-  z-index: 5;
+  height: 600px;
+  left: 600px;
+  width: 600px;
+  top: 1060px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 140%;
+
+  text-align: justify;
+
+  color: #0A0A0A;
 }
