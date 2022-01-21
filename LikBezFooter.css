@@ -18,7 +18,7 @@ footer{
     border-top-left-radius: 125px;
     line-height:20px;
 }
-.row{
+.roww{
     width: 85%;
     margin: auto;
     display: flex;
@@ -27,11 +27,11 @@ footer{
     justify-content: space-between;
     
 }
-.col{
+.coll{
     flex-basis: 25%;
     padding:10px; 
 }
-.col h3{
+.coll h3{
     width: fit-content;
     margin-bottom:40px;
     position: relative;
@@ -47,12 +47,12 @@ footer{
     margin-bottom: 12px;
 
 }
-.col .links a{
+.coll .links a{
     text-decoration: none;
     color: var(--white);
     position: relative;
 }
-.col .links a::before{
+.coll .links a::before{
     content: "";
     bottom:0;
     left:0;
@@ -62,10 +62,10 @@ footer{
     background-color: var(--white);;
     transition:0.2s;
 }
-.col .links a:hover{
+.coll .links a:hover{
     color: var(--white);
 }
-.col .links a:hover:before{
+.coll .links a:hover:before{
     width:100%;
 }
 form{
