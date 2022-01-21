@@ -7,6 +7,7 @@
     <!-- логотип(иконка) -->
     <link rel="icon" href="img/logoB.png"> 
     <link rel="stylesheet" href="LikBez.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="https://kit.fontawesome.com/bb693eaf4e.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!--шрифт-->
     
@@ -48,24 +49,92 @@
                 <img src="img/main1transparent.png" alt="" id="main-img">
             </div>
         </div>
+        <div class="main-select d-flex m-5 flex-wrap ps-5">
+        <select class="form-select form-select-sm-2 mx-4 text-center" aria-label=".form-select-sm example">
+            <option selected>Your age</option>
+            <option value="1">5-8</option>
+            <option value="2">8-12</option>
+            <option value="3">13-17</option>
+            <option value="4">18-25</option>
+            <option value="5">25-30</option>
+            <option value="6">30+</option>
+          </select>
+          <select class="form-select form-select-sm-2 mx-4 text-center" aria-label=".form-select-sm example">
+            <option selected>Your level</option>
+            <option value="1">Beginner(A0)</option>
+            <option value="2">Elementry(A1)</option>
+            <option value="3">Pre-intermediate(A2)</option>
+            <option value="4">Intermediate(B1)</option>
+            <option value="5">Upper-intermediate(B2)</option>
+            <option value="6">Advanced</option>
+          </select>
+          <select class="form-select form-select-sm-2 mx-4 text-center" aria-label=".form-select-sm example">
+            <option selected>Language</option>
+            <option value="1">English</option>
+            <option value="2">French</option>
+            <option value="3">Deutsch</option>
+            <option value="4">Kazakh</option>
+            <option value="5">Russian</option>
+            <option value="6">Spanish</option>
+        </select>
+        <div class="container imges-main d-flex m-5 mx-0 flex-wrap-2  ">
+            <div class="row ">
+                <div class="col-md-4  rounded-4 mx-3 img-size" >
+                    <div class="">
+                        <img src="img/1.png" class="rounded-4 img-size"> 
+                        <div class="card-text text-center m-3">
+                            <h3>Quizzes</h3>
 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 rounded-4 mx-3 img-size" >
+                    <div class="">
+                        <img src="img/11.png" class="rounded-4 img-size">
+                        <div class="card-text text-center m-3">
+                            <h3>Videos</h3>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 rounded-4 mx-3 img-size" >
+                    <div class="">
+                        <img src="img/1111.png" class="rounded-4 img-size">
+                        <div class="card-text text-center m-3">
+                            <h3>Books</h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div>
+          <div class="imges-main d-flex m-5 flex-wrap ps-5  ">
+              <img src="img/1.png" class="rounded-4 mx-3 img-size" alt="">
+              <img src="img/11.png" class="rounded-4 mx-3 img-size" alt="">
+              <img src="img/111.png" class="rounded-4 mx-3 img-size" alt="">
+              <img src="img/1111.png" class="rounded-4 mx-3 img-size" alt="">
+               
+          </div> -->
+        
     </div>
+    
     <!-- футер -->
     <footer class="footer-container">
-        <div class="row">
-            <div class="col">
+        <div class="roww">
+            <div class="coll">
                 <div class="footer-logo"></div>
                 
             </div>
-            <div class="col">
+            <div class="coll">
                 <h3>Office</h3>
                 <p class="footer-text">Nur-Sultan</p>
                     <p>EXPO business center, block C.1.</p>
                    <p>Kazakhstan, 010000</p>
                    <p class="email-id">Тут должна была быть почта :D</p>
-                   <h4>А тут номер телефона :D</h4>
+                   <h6>А тут номер телефона :D</h6>
             </div>
-            <div class="col"><h3>Links</h3>
+            <div class="coll"><h3>Links</h3>
             <ul class="links">  
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
@@ -73,7 +142,7 @@
                 <li><a href="#">Contacts</a></li>
             </ul>
         </div>
-            <div class="col">
+            <div class="coll">
                 <h3>Letter</h3>
                 <form>
                     <i class="far fa-envelope"></i>
