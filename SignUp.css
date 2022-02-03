@@ -1,0 +1,60 @@
+.social_login{
+    text-align:center;
+}
+.social_log{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding:0;
+
+}
+.social_log li{
+    margin:0 6px;
+}
+.social_log li img{
+    width: 40px;
+}
+.social_login p{
+    color: #8c8c8c;
+}
+.signin_modal .nav-tabs .nav-link{
+    background-color: var(--white);
+    border-radius: 0;
+    color: var(--black);
+    border:none;
+}
+.signin_modal .nav-tabs .nav-link.active{
+    background-color: var(--lightblue);
+    color: var(--white);
+}
+.signin_modal .nav-tabs button{
+    width: 50%;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+.signin_modal .nav-tabs {
+    border-bottom: none;
+}
+.signup_tab{
+    padding:0 3rem;
+}
+.btn-block{
+    display: block;
+    width: 100%;
+}
+.signup_tab input.form-control{
+    font-size: 12px;
+    color:#8c8c8c;
+    height: 40px;
+}
+.forgot_link{
+    text-align: right;
+    font-size: 12px;
+    
+    
+}
+.forgot_link a{
+    text-decoration: none;
+}
+
