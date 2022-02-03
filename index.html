@@ -8,8 +8,11 @@
     <link rel="icon" href="img/logoB.png"> 
     <link rel="stylesheet" href="LikBez.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <script src="https://kit.fontawesome.com/bb693eaf4e.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!--шрифт-->
+    
     
     <title>LikBez</title>
 </head>
@@ -31,7 +34,7 @@
                 <li><a href="Likbez.html" class="nav-links">About us</a></li>
                 <li><a href="dwa.html" class="nav-links">Programs</a></li>
                 <li><a href="indexEnd.html" class="nav-links">Contacts</a></li>
-                <li><a href="#" class="nav-links nav-links-btn">Sign In</a></li> <!-- вход -->
+                <li><a href="#" class="nav-links nav-links-btn" type="button" class="main-btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In</a></li> <!-- вход -->
                 
             </ul>
         </nav>
@@ -43,73 +46,131 @@
                 <h1>Language <div id="courses">courses</div>
                     </h1>
                 <p>You will talk to us quickly and easily</p>
-                <button class="main-btn"><a href="#">Sign Up</a></button>
+                <button type="button" class="main-btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#">Sign Up</a></button>
             </div>
             <div class="main-img-container">
                 <img src="img/main1transparent.png" alt="" id="main-img">
             </div>
         </div>
-        <div class="main-select d-flex m-5 flex-wrap ps-5">
-        <select class="form-select form-select-sm-2 mx-4 text-center" aria-label=".form-select-sm example">
-            <option selected>Your age</option>
-            <option value="1">5-8</option>
-            <option value="2">8-12</option>
-            <option value="3">13-17</option>
-            <option value="4">18-25</option>
-            <option value="5">25-30</option>
-            <option value="6">30+</option>
-          </select>
-          <select class="form-select form-select-sm-2 mx-4 text-center" aria-label=".form-select-sm example">
-            <option selected>Your level</option>
-            <option value="1">Beginner(A0)</option>
-            <option value="2">Elementry(A1)</option>
-            <option value="3">Pre-intermediate(A2)</option>
-            <option value="4">Intermediate(B1)</option>
-            <option value="5">Upper-intermediate(B2)</option>
-            <option value="6">Advanced</option>
-          </select>
-          <select class="form-select form-select-sm-2 mx-4 text-center" aria-label=".form-select-sm example">
-            <option selected>Language</option>
-            <option value="1">English</option>
-            <option value="2">French</option>
-            <option value="3">Deutsch</option>
-            <option value="4">Kazakh</option>
-            <option value="5">Russian</option>
-            <option value="6">Spanish</option>
-        </select>
-        <div class="container imges-main d-flex m-5 mx-0 flex-wrap-2  ">
-            <div class="row ">
-                <div class="col-md-4  rounded-4 mx-3 img-size" >
-                    <div class="">
-                        <img src="img/1.png" class="rounded-4 img-size"> 
-                        <div class="card-text text-center m-3">
-                            <h3>Quizzes</h3>
-
-                        </div>
-                    </div>
+           
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Welcome to the LikBez</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body signin_modal">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-signup-tab" data-bs-toggle="tab" data-bs-target="#nav-signup" type="button" role="tab" aria-controls="nav-signup" aria-selected="true">Sign Up</button>
+                  <button class="nav-link" id="nav-signin-tab" data-bs-toggle="tab" data-bs-target="#nav-signin" type="button" role="tab" aria-controls="nav-signin" aria-selected="false">Sign In</button>
                 </div>
-                <div class="col-md-4 rounded-4 mx-3 img-size" >
-                    <div class="">
-                        <img src="img/11.png" class="rounded-4 img-size">
-                        <div class="card-text text-center m-3">
-                            <h3>Videos</h3>
+              </nav>
+              
+          <div class="social_login">
+              <p>with your social network</p>
+              <ul class="social_log ">
+                <li><a href="#"><img src="img/Facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="img/google.png" alt=""></a></li>
+                <li><a href="#"><img src="img/Apple.png" alt=""></a></li>
 
-                        </div>
+              </ul>
+              <p>or</p>
+          </div>
+          <!-- <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Confirm password">
+            <label for="floatingPassword">Confirm password</label>
+          </div> -->
+          <div class="tab-content signup_tab" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-signup" role="tabpanel" aria-labelledby="nav-home-tab">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputText1" class="form-label">Username</label>
+                        <input placeholder="Example: Nagibator228" type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp">
+                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input placeholder="Example: umnik@gmail.com" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input placeholder="Example: **********" type="password" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputConfirmPassword1" class="form-label">Confirm Password</label>
+                        <input placeholder="Confirm your password" type="password" class="form-control" id="exampleInputConfirmPassword1" aria-describedby="emailHelp">
+                      </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Create an account</button>
+                  </form>
+            </div>
+            <div class="tab-pane fade" id="nav-signin" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail2" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
                 </div>
-                <div class="col-md-4 rounded-4 mx-3 img-size" >
-                    <div class="">
-                        <img src="img/1111.png" class="rounded-4 img-size">
-                        <div class="card-text text-center m-3">
-                            <h3>Books</h3>
+                <div class="mb-3">
+                    <label for="exampleInputPassword2" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2" aria-describedby="emailHelp">
+                  </div>
+                  <p class="forgot_link"><a href="#">Forgot your password?</a></p>
+                  <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+        <!-- <div class="modals" id="email-modals">
+            <div class="modals-content">
+                <span class="close-btnn">&times;</span>
+                <div class="modals-content-left">
+                    <img id="modals-img" src="img/SignUp.svg">
+                </div>
+                <div class="modals-content-right">
+                    <form action="/" class="modals-form" id="forms" method="GET">
 
-                        </div>
-                    </div>
+                        <h1>Welcome to the LikBez, you will talk to us quickly and easily! 
+                            Create your account by filling out the information below.</h1>
+                            <div class="form-validationn">
+                                <input type="text" class="modals-input" id="name" name="name" placeholder="Enter your name">
+                                <p>Error</p>
+                            </div>
+                            <div class="form-validationn">
+                                <input type="email" class="modals-input" id="email" name="email" placeholder="Enter your email">
+                                <p>Error</p>
+                            </div>
+                            <div class="form-validationn">
+                                <input type="password" class="modals-input" id="password" name="password" placeholder="Enter your password">
+                                <p>Error</p>
+                            </div>
+                            <div class="form-validationn">
+                                <input type="password" class="modals-input" id="password-confirm" name="password" placeholder="Confirm your password">
+                                <p>Error</p>
+                            </div>
+                            <input type="submit" class="modals-input-btnn" value="Sign Up">
+                            <span class="modals-input-login"> If you already have account: <a>Sign In</a></span>
+                    </form>
                 </div>
             </div>
-        </div>
+        </div> -->
+       
         <!-- </div>
-          <div class="imges-main d-flex m-5 flex-wrap ps-5  ">
+          <div class="imges-mainт d-flex m-5 flex-wrap ps-5  ">
               <img src="img/1.png" class="rounded-4 mx-3 img-size" alt="">
               <img src="img/11.png" class="rounded-4 mx-3 img-size" alt="">
               <img src="img/111.png" class="rounded-4 mx-3 img-size" alt="">
@@ -135,7 +196,7 @@
                    <h6>А тут номер телефона :D</h6>
             </div>
             <div class="coll"><h3>Links</h3>
-            <ul class="links">  
+            <ul class="links ">  
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Programs</a></li>
@@ -144,7 +205,7 @@
         </div>
             <div class="coll">
                 <h3>Letter</h3>
-                <form>
+                <form class="formm">
                     <i class="far fa-envelope"></i>
                     <input  type="email" placeholder="Enter your email address" class="email-send" required>
                     <button type="submit" class="btn-footer"><i class="fas fa-arrow-right"></i></button>
@@ -153,6 +214,9 @@
             </div>
         </div>
     </footer>
-    <script scr="LikBez.js"></script>
+    <script src="LikBez.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
