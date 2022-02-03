@@ -1,5 +1,6 @@
 @import url('LikBezContent.css');
 @import url('LikBezFooter.css');
+@import url('SignUp.css');
 /* основные цвета */
 :root{
     --darkblue:#3100BD;
