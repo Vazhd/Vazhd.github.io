@@ -1,176 +1,230 @@
-@import url('LikBezContent.css');
-@import url('LikBezFooter.css');
-@import url('SignUp.css');
-/* основные цвета */
-:root{
-    --darkblue:#3100BD;
-    --lightblue:#2AD9FF;
-    --white:#FFF;
-    --black:#000;
-    --gray:#DCDCDC;
-    --red:#998877;
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Likbez</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-}
-/* что то там для сайта, там шрифты, анау мынау */
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-    font-family: 'Comfortaa', cursive;
-}
-/* наш логотип(картинка)*/
-#nav_logo{
-    height: 75px;
-    width: 150px;
-    background-image: url('img/likbezlogo.png');  
-    background-size:100%;
-    background-repeat: no-repeat;
-    justify-self: start;
-    margin-left: 20px;
-}
-#nav_logo{
-    cursor: pointer;
-}
-/* контейнер панель навигации */
-.nav-container{
-    width: 100%;
-    background-color: var(--white);;
-    
-}
-.navbar{
-    display: grid;
-    grid-template-columns: 0.2fr auto 1fr;
-    align-items: center;
-    height:80px;
-    width: 90%;
-    max-width: 1720px;
-    margin: 0 auto;
-}
-/* меню панеля навигации*/
-.nav-menu{
-    display:grid;
-    grid-template-columns: repeat(5, auto);
-    list-style: none;
-    text-align:center;
-    width: 70%;
-    justify-self: end;
-}
-.nav-links{
-    color: var(--black);;
-    text-decoration: none;
-    position: relative;
-}
-/* анимация подчеркивания*/
-.nav-links::before{
-    content: "";
-    bottom:0;
-    left:0;
-    position: absolute;
-    width: 0%;
-    height: 1px;
-    background-color: var(--black);;
-    transition:0.2s;
-}
-        .nav-links:hover{
-            color: black;
-            }
-            .nav-links:hover:before{
-                width: 100%;
-                }
-/* кнопка входа */
-.nav-links-btn{
-    background-color: transparent;
-    padding: 5px 15px;
-    border-radius:4px;
-    color: var(--black);
-    
-}
-        .nav-links-btn:hover{
-    background-color: var(--lightblue);
-    color: var(--white);
-    padding: 5px 15px;
-    border-radius:4px;
-    transition: all 0.1s ease-out;
-}
-            .nav-links-btn:hover:before{
-    width: 0%;
-}
+  <link rel="stylesheet" href="main2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logoB.png">
+  <script src="https://kit.fontawesome.com/bb693eaf4e.js"></script>
 
-.menu-toggle .bar{
-    width: 25px;
-    height: 3px;
-    margin: 5px auto; 
-    transition: all 0.3s ease-in-out;
-    background-color: var(--black);;
-}
+</head>
+<body>
+  <div class="ForBeauty">
+</div>
+  <div class="nav-container">
+        <nav class="navbar">
+            <div id="nav_logo"></div> <!--наш логотип-->
+            <div class="menu-toggle" >
+            <div id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                </div>
+            </div>
+            <ul class="nav-menu"> <!--главная панель навигации-->
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="#" class="nav-links">About us</a></li>
+                <li><a href="dwa.html" class="nav-links">Programs</a></li>
+                <li><a href="indexEnd.html" class="nav-links">Contacts</a></li>
+                <li><a href="#" class="nav-links nav-links-btn">Sign In</a></li> <!-- вход -->
 
-/* перенос панеля куда то там, я сам не понял, сорян((( */
-@media screen and (max-width:768px) {
-    .nav-container{
-        position: relative;
-        
-    }
-    .nav-menu{
-        display:grid;
-        grid-template-columns: auto;
-        background: var(--white);
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: 80px;
-        /* left: -100%;
-        opacity: 0; */
-        transition: all 0.5s ease;
-    }
-    #nav_logo{
-        margin-left:20px;
-    }
-    .nav-menu.active{
-        background: var(--white);
-        left:0;
-        opacity: 1;
-        transition: all 0.5s ease;
+            </ul>
+        </nav>
+    </div>
+<div class="about_us_part">
+  <h1 id="h1">About us</h1> <br>
+  <img id="pic1" src="assets/paint1.png">
+  <p>  The LikBez language School network was founded in 2012.
+   We provide professional English language courses for all levels.
+   LikBez teachers are native English speakers from the UK, USA,
+    Canada, Australia and New Zealand. They have international
+     qualifications in the field of teaching, as well as experience
+     in teaching children and adults in different countries of the world.
+     The use of communicative methods in the study of foreign languages
+     is the main focus of LikBez.
+     </p>
+</div>
+<div class="pos">
+  <hr class="style-one">
+</div>
+  <h2 id="h2">Our teachers<i class="fas fa-chalkboard-teacher"></i></h2>
+  <section class="carousel slider" data-ride="carousel" id="postsCarousel">
 
-    }
-    .nav-links{
-        text-align: center;
-        line-height:60px;
-        width: 100%;
-        display:table;
-    }
-    .nav-links:hover{
-        background-color: var(--white);
-        color: black;
-        transition: all 0.4s ease-out;
-    }
-    .navbar{
-        width: 100%;
-    }
-    .nav-links-btn{
-        background-color: white;
-        border: none;
-        padding: 0;
-        border-radius:0;
-        color: var(--black);
-        transition: all 0.4s ease-out; 
-    }
-    
-    .nav-links-btn:hover{
-        background-color: var(--lightblue);
-        color: var(--white);
-        border: none;
-        padding: 0;
-        border-radius:0;
-        transition: all 0.4s ease-out;
-    }
-    #mobile-menu{
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-right mb-4">
+          <a class="btn btn-outline-secondary prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+          <a class="btn btn-outline-secondary next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
 
-    }
-    
-    
-}
+    <div class="container pt-0 mt-2 carousel-inner">
+      <div class="row row-equal carousel-item active mt-o">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-img-top card-img-top-250">
+              <img class="img-fluid" src="assets/paint2.png" width="500" height="400" alt="...">
+            </div>
+            <div class="card-block pt-2">
+              <div class="card-header">
+                <h3>Ashleigh</h3>
+              </div>
+              <div class="card-text">
+              Ashleigh is a great tutor with patience and comprehensive understanding to her students. She is able to explain your questions and interpret your thoughts accurately. The enabler in your English-studying journey is her, definitely
 
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-img-top card-img-top-250">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"width="500" height="400" alt="...">
+            </div>
+            <div class="card-block pt-2">
+              <div class="card-header">
+                <h3>Lucie</h3>
+              </div>
+              <div class="card-text">
+                CELTA Qualified, more than one year of teaching experience. Trained in Cambridge Exam Preparation. Hello! I'm Lucie. I am an actress and English Tutor. I live in London.
+                I have a CELTA Qualification (Certificate in Teaching English) from Cambridge University.
+                I teach General English, Cambridge Exam Preparation (up to C1) and Business English.
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-img-top card-img-top-250">
+              <img class="img-fluid" src="assets/paint3.png" width="500" height="400" alt="...">
+            </div>
+            <div class="card-block pt-2">
+              <div class="card-header">
+                <h3>Evelyn</h3>
+              </div>
+              <div class="card-text">
+Evelyn is a great tutor, she sets an environment that is quite comfortable, she has been very patient with my mistakes and I can feel there is a clear progress. I'm not that talkative and somehow, she got me to speak a lot and feel ok with it, that allows me to make mistakes and correct them without losing the flow of the topics we talk about
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row row-equal carousel-item mt-o">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-img-top card-img-top-250">
+              <img class="img-fluid" src="assets/paint4.png" width="500" height="400" alt="...">
+            </div>
+            <div class="card-block pt-2">
+              <div class="card-header">
+                <h3>Henry</h3>
+              </div>
+              <div class="card-text">
+                CELTA Qualified Native Speaker of British English 🇬🇧 🇬🇧 CELTA QUALIFIED - BRITISH ENGLISH TEACHER 🇬🇧
+Hello there, my name is Henry and I am a professionally trained English teacher from London, England.
+I have 4 years experience working with young children , teenagers and adults.
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-img-top card-img-top-250">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"width="500" height="400" alt="...">
+            </div>
+            <div class="card-block pt-2">
+              <div class="card-header">
+                <h3>David</h3>
+              </div>
+              <div class="card-text">
+                Very nice experience of leaning language with David. Interesting and easy format of the lessons help you to fell free and comfortable. Good rule from David to explain mistakes and make a conclusions during last 10 min of each lesson. All these "small details" really motivate you for a new challenges in English
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-img-top card-img-top-250">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1517256673644-36ad11246d21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"width="500" height="400" alt="...">
+            </div>
+            <div class="card-block pt-2">
+              <div class="card-header">
+                <h3>Aaliyah</h3>
+              </div>
+              <div class="card-text">
+                Certified tutor with teaching experience. Hello, my name is Aaliyah an I'm from England. I love to travel and visit many different countries with my family and friends. I also enjoy painting, singing and dancing.
+                I have been a Teaching Assistant for about a year at the prestigious Oxted High School.
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+<!-- футер -->
+<footer class="footer-container">
+  <div class="row">
+      <div class="col">
+          <div class="footer-logo"></div>
+      </div>
+      <div class="col">
+          <h3>Office</h3>
+          <p class="footer-text">Nur-Sultan</p>
+              <p>EXPO business center, block C.1.</p>
+             <p>Kazakhstan, 010000</p>
+             <p class="email-id">Тут должна была быть почта :D</p>
+             <h4>А тут номер телефона :D</h4>
+      </div>
+      <div class="col"><h3>Links</h3>
+      <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">Contacts</a></li>
+      </ul>
+  </div>
+      <div class="col">
+          <h3>Letter</h3>
+          <form>
+              <i class="far fa-envelope"></i>
+              <input  type="email" placeholder="Enter your email address" class="email-send" required>
+              <button type="submit" class="btn-footer"><i class="fas fa-arrow-right"></i></button>
+          </form>
+          <div class="social-icons"></div>
+      </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script>
+  (function($){
+    "use strict";
+    $('.next').click(function(){$('.carousel').carousel('next');return false;});
+    $('.prev').click(function(){$('.carousel').carousel('prev');return false;});
+  })
+  (jQuery);
+</script>
+</body>
+</html>
