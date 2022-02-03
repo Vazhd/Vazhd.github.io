@@ -96,16 +96,16 @@ hr:not([size]) {
   height: 1px;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+/* h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-}
+} */
 
-h1, .h1 {
+/* h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
-}
+} */
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
@@ -169,7 +169,10 @@ address {
 
 ol,
 ul {
-  padding-left: 2rem;
+  padding-left: 0rem;
+}
+.ol-ul{
+  padding-left: rem;
 }
 
 ol,
@@ -291,10 +294,10 @@ figure {
   margin: 0 0 1rem;
 }
 
-img,
+/* img,
 svg {
   vertical-align: middle;
-}
+} */
 
 table {
   caption-side: bottom;
@@ -336,16 +339,16 @@ button:focus:not(:focus-visible) {
   outline: 0;
 }
 
-input,
-button,
+
+/* button,
 select,
 optgroup,
 textarea {
   margin: 0;
   font-family: inherit;
-  font-size: inherit;
+  font-size: inheritinput;
   line-height: inherit;
-}
+} */
 
 button,
 select {
